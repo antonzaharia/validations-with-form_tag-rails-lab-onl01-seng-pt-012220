@@ -11,7 +11,7 @@ class PostsController < ApplicationController
     @post = Post.new(post_params)
     if @post.valid?
       @old_post = Post.find(params[:id])
-      @old_psot.update(post_params)
+      @old_poot.update(post_params)
       redirect_to post_path(@post)
     else
       render :edit
