@@ -1,7 +1,7 @@
 <h2>Editing "<%= @post.title %>"</h2>
 <%= form_tag("/posts", method: :patch) do %>
 
-<% if @new_post.errors.any? %>
+<% if @post.errors.any? %>
   <div id="error_explanation">
     <h2>There were some errors:</h2>
     <ul>
