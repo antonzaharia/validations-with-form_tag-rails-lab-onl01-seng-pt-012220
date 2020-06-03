@@ -30,7 +30,7 @@
   <div class="field<%= ' field_with_errors' if @new_post.errors[:content].any? %>">
     <%= label_tag "content", "Content" %>
     <br />
-    <%= text_area_tag "content", @new_post.content %>
+    <%= text_area_tag "content", @post.content %>
   </div>
   <%= submit_tag "Update" %>
 <% end %>
