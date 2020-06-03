@@ -1,5 +1,6 @@
 <h2>Editing "<%= @post.title %>"</h2>
 <%= form_tag("/posts") do %>
+
 <% if @post.errors.any? %>
   <div id="error_explanation">
     <h2>There were some errors:</h2>
