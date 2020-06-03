@@ -5,7 +5,7 @@
   <div id="error_explanation">
     <h2>There were some errors:</h2>
     <ul>
-      <% @new_post.errors.full_messages.each do |message| %>
+      <% @post.errors.full_messages.each do |message| %>
         <li><%= message %></li>
       <% end %>
     </ul>
